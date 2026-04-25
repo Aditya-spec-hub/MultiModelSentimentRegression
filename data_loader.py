@@ -1,18 +1,3 @@
-﻿"""
-data_loader.py
-
-Research-grade CMU-MOSEI loader.
-
-Features:
-- Flexible file discovery
-- Strict modality validation
-- Deterministic sample alignment
-- Dataset integrity checks
-- Label sanity verification (robust)
-- Feature shape logging
-- Reproducibility-safe
-"""
-
 from __future__ import annotations
 
 import logging
