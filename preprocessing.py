@@ -1,9 +1,3 @@
-﻿"""
-preprocessing.py
-
-Research-grade preprocessing for CMU-MOSEI
-"""
-
 from __future__ import annotations
 
 import logging
