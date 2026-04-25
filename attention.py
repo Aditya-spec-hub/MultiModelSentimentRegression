@@ -1,23 +1,9 @@
-﻿"""
-attention.py
-
-Attention-based multimodal fusion for TensorFlow/Keras.
-"""
-
+﻿
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Softmax, Concatenate, Multiply
 
 
 def attention_fusion(v, a, t):
-    """
-    Attention-based fusion for 3 modalities.
-
-    Args:
-        v, a, t: tensors of shape (batch, hidden_dim)
-
-    Returns:
-        fused tensor (batch, hidden_dim)
-    """
 
     # Stack modalities → (batch, 3, hidden_dim)
     stacked = tf.stack([v, a, t], axis=1)
