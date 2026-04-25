@@ -10,10 +10,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLRO
 
 
 def _to_json_serializable(obj: Any) -> Any:
-    """
-    Recursively convert NumPy/TF scalar types to Python-native types
-    so json.dump works reliably.
-    """
+
     if isinstance(obj, dict):
         return {str(k): _to_json_serializable(v) for k, v in obj.items()}
 
