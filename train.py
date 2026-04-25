@@ -1,13 +1,4 @@
-﻿"""
-train.py
-
-Research-grade training utility for multimodal models.
-- Identical training protocol across model variants
-- Safe JSON history serialization
-- Best-model checkpointing
-"""
-
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import os
